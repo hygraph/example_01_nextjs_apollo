@@ -1,6 +1,6 @@
 {
   "name": "vinylbase",
-  "url": "https://github.com/GraphCMS/Vinylbase.git",
+  "url": "https://github.com/GraphCMS/exmple_01_nextjs_apollo.git",
   "version": "0.0.1",
   "description": "Example app using Next, Apollo and GraphCMS",
   "scripts": {
