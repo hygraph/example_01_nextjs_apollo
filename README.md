@@ -1,4 +1,4 @@
-# Serverside rendered App with Next.js, Apollo and GraphCMS
+# Server-side rendered App with Next.js, Apollo and GraphCMS
 
 🚀 **[Live Demo](https://vinylbase-lfiecdwxri.now.sh/)**
 
