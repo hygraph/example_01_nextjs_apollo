@@ -1,8 +1,8 @@
 # Serverside rendered App with Next.js, Apollo and GraphCMS
 
-[Live Demo](https://vinylbase-lfiecdwxri.now.sh/)
+🚀 **[Live Demo](https://vinylbase-lfiecdwxri.now.sh/)**
 
-This example shows a small demo of how to build a [Next.js](https://github.com/zeit/next.js/), [Apollo](http://www.apollodata.com/) and [GraphCMS](https://graphcms.com) web application.
+This example shows how to build a small music blog with [Next.js](https://github.com/zeit/next.js/), [Apollo](http://www.apollodata.com/) and [GraphCMS](https://graphcms.com).
 
 To connect your app you have to setup a new GraphCMS project and create the required content models as described [here](https://graphcms.com/docs/Examples/#serverside-rendered-app-with-nextjs-and-apollo).
 
