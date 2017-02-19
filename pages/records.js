@@ -14,7 +14,7 @@ function AllRecords ({ url: { pathname }, loading, data: { allRecords } }) {
       {
         loading ? <Loading /> : (
           <div>
-            <Header title='All Artists' pageImage='/static/records.svg' isIcon />
+            <Header title='All Records' pageImage='/static/records.svg' isIcon />
             <section>
               <Grid entries={allRecords} type='records' />
             </section>
