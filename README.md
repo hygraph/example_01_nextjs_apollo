@@ -1,6 +1,6 @@
 # Server-side rendered App with Next.js, Apollo and GraphCMS
 
-🚀 **[Live Demo](https://vinylbase-fsiujaerlv.now.sh)**
+🚀 **[Live Demo](https://vinylbase.now.sh)**
 
 This example shows how to build a small music blog with [Next.js](https://github.com/zeit/next.js/), [Apollo](http://www.apollodata.com/) and [GraphCMS](https://graphcms.com).
 
