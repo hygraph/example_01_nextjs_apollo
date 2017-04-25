@@ -6,13 +6,11 @@ This example shows how to build a small music blog with [Next.js](https://github
 
 To connect your app you have to setup a new GraphCMS project and create the required content models as described [here](https://graphcms.com/docs/examples/Server-side_rendered_app_with_nextjs_and_apollo/).
 
-Authorization is done via environment variables. You need to setup the endpoint url and the permanent auth token as variables with name: `GRAPHCMS_API` and `TOKEN`.
-
 To get this information, log into GraphCMS and go to your project settings.
 
 ![Screenshot](docs/settings.png)
 
-Copy the Endpoint URL for the `Simple Endpoint` from the `ENDPOINTS` section. To create a token, fill out the form within the `AUTH TOKENS` section and copy the token content.
+Copy the Endpoint URL for the `Simple Endpoint` from the `ENDPOINTS` section. Insert the URL into the variable `GRAPHCMS_API` in the file `lib/initClient`.
 
 ## Installation
 
@@ -30,4 +28,4 @@ Install now:
 
 Deploy the app:
 
-`now -e GRAPHCMS_API='YOUR_ENDPOINT' -e TOKEN='YOUR_TOKEN'`
+`now`
