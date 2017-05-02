@@ -7,7 +7,7 @@ export default ({ entries, type, pageImage }) => (
       {entries.map((entry, index) =>
         <li key={entry.id}>
           <div>
-            <Link href={`/${type}/${entry.slug}`} as={`/${type}/${entry.slug}`} >
+            <Link href='/artists/details' as={`/${type}/${entry.slug}`} >
               <a>
                 <Card entry={entry} />
               </a>
