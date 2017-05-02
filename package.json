@@ -29,7 +29,6 @@
     "react-apollo": "^1.1.3",
     "react-dom": "^15.5.4",
     "react-markdown": "^2.5.0",
-    "react-star-rating-component": "1.2.4",
-    "redux": "3.6.0"
+    "react-star-rating-component": "1.2.4"
   }
 }
