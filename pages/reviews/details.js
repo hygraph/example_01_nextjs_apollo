@@ -1,6 +1,5 @@
 import React from 'react'
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import { gql, graphql } from 'react-apollo'
 import App from '../../components/App'
 import Nav from '../../components/Nav'
 import Loading from '../../components/Loading'

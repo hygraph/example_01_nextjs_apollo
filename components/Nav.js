@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default ({ pathname }) => (
   <div className='nav-container'>
     <nav>
-      <Link href='/' as='/'>
+      <Link prefetch href='/' as='/'>
         <a className={(pathname === '/' || pathname === '/reviews') && 'is-active'}>Reviews</a>
       </Link>
 
