@@ -1,13 +1,13 @@
 import Card from './Card'
 import Link from 'next/link'
 
-export default ({ entries, type, pageImage }) => (
+const Grid = ({ entries, type, pageImage }) => (
   <div>
     <ul>
-      {entries.map((entry, index) =>
+      {entries.map(entry =>
         <li key={entry.id}>
           <div>
-            <Link href='/artists/details' as={`/${type}/${entry.slug}`} >
+            <Link href={`/${type}/details?slug=${entry.slug}&type=${type}`} as={`/${type}/${entry.slug}`} >
               <a>
                 <Card entry={entry} />
               </a>
@@ -31,3 +31,5 @@ export default ({ entries, type, pageImage }) => (
         `}</style>
   </div>
 )
+
+export default Grid

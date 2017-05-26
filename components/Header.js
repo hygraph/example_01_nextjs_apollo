@@ -1,6 +1,6 @@
 import PageImage from './PageImage'
 
-export default ({ title, subLine, pageImage, isIcon }) => (
+const Header = ({ title, subLine, pageImage, isIcon }) => (
   <div className='header-container'>
     <header>
       <h1>{title}</h1>
@@ -35,3 +35,5 @@ export default ({ title, subLine, pageImage, isIcon }) => (
     `}</style>
   </div>
 )
+
+export default Header

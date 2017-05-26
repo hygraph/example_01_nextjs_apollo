@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default ({ children }) => (
+const App = ({ children }) => (
   <div>
     <Head>
       <title>Vinylbase</title>
@@ -43,3 +43,5 @@ export default ({ children }) => (
     `}</style>
   </div>
 )
+
+export default App

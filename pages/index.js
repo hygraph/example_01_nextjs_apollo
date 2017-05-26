@@ -6,7 +6,7 @@ import Nav from '../components/Nav'
 import Grid from '../components/Grid'
 import withData from '../lib/withData'
 
-function AllReviews ({ url: { pathname }, data: { loading, allReviews } }) {
+const AllReviews = ({ url: { pathname }, data: { loading, allReviews } }) => {
   return (
     <App>
       <Nav pathname={pathname} />

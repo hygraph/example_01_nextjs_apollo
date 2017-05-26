@@ -6,7 +6,7 @@ import Loading from '../components/Loading'
 import Nav from '../components/Nav'
 import withData from '../lib/withData'
 
-function AllArtists ({ url: { pathname }, data: { loading, allArtists } }) {
+const AllArtists = ({ url: { pathname }, data: { loading, allArtists } }) => {
   return (
     <App>
       <Nav pathname={pathname} />

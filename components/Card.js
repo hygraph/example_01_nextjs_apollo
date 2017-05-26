@@ -1,21 +1,21 @@
 import React from 'react'
 import StarRatingComponent from 'react-star-rating-component'
 
-export default ({ entry: { createdAt, title, id, image, rating } }) => (
+const Card = ({ entry: { createdAt, title, id, image, rating } }) => (
   <div className='card'>
     { image ? <img src={`https://media.graphcms.com/resize=w:140,h:140,fit:crop/${image.handle}`} /> : null }
 
     <div className='title'>{title}</div>
     { rating &&
       <div className='star-wrapper'>
-          <StarRatingComponent
-            name='Rating'
-            className='rating'
-            starCount={5}
-            value={rating}
-            editing={false}
-          />
-        </div>
+        <StarRatingComponent
+          name='Rating'
+          className='rating'
+          starCount={5}
+          value={rating}
+          editing={false}
+        />
+      </div>
     }
     <style jsx>{`
       .card {
@@ -56,3 +56,5 @@ export default ({ entry: { createdAt, title, id, image, rating } }) => (
     `}</style>
   </div>
 )
+
+export default Card

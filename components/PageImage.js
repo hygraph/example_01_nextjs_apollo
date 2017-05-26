@@ -1,6 +1,6 @@
 import classnames from 'classnames'
 
-export default ({image, isIcon}) => {
+const PageImage = ({image, isIcon}) => {
   if (!image) {
     return null
   }
@@ -32,3 +32,5 @@ export default ({image, isIcon}) => {
     </div>
   )
 }
+
+export default PageImage

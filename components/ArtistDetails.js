@@ -2,7 +2,7 @@ import React from 'react'
 import ReactMarkdown from 'react-markdown'
 import Grid from './Grid'
 
-export default ({ artist }) => (
+const ArtistDetails = ({ artist }) => (
   <article>
     <ReactMarkdown className='react-markdown' source={artist.bio} />
     <h2>Records:</h2>
@@ -10,3 +10,5 @@ export default ({ artist }) => (
     <Grid entries={artist.records} type='records' />
   </article>
 )
+
+export default ArtistDetails

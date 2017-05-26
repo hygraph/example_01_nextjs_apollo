@@ -1,17 +1,17 @@
 import Link from 'next/link'
 
-export default ({ pathname }) => (
+const Nav = ({ pathname }) => (
   <div className='nav-container'>
     <nav>
-      <Link href='/' as='/'>
+      <Link href='/'>
         <a className={(pathname === '/' || pathname === '/reviews') && 'is-active'}>Reviews</a>
       </Link>
 
-      <Link href='/artists' as='/artists'>
+      <Link href='/artists'>
         <a className={pathname === '/artists' && 'is-active'}>Artists</a>
       </Link>
 
-      <Link href='/records' as='/records'>
+      <Link href='/records'>
         <a className={pathname === '/records' && 'is-active'}>Records</a>
       </Link>
     </nav>
@@ -47,3 +47,5 @@ export default ({ pathname }) => (
     `}</style>
   </div>
 )
+
+export default Nav

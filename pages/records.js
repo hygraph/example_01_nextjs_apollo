@@ -6,7 +6,7 @@ import Loading from '../components/Loading'
 import Nav from '../components/Nav'
 import withData from '../lib/withData'
 
-function AllRecords ({ url: { pathname }, data: { loading, allRecords } }) {
+const AllRecords = ({ url: { pathname }, data: { loading, allRecords } }) => {
   return (
     <App>
       <Nav pathname={pathname} />

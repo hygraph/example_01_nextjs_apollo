@@ -7,8 +7,8 @@ import Header from '../../components/Header'
 import RecordDetails from '../../components/RecordDetails'
 import withData from '../../lib/withData'
 
-function Record ({ url: { pathname }, data: { loading, Record } }) {
-  const pageImage = Record.cover ? `https://media.graphcms.com/resize=w:80,h:80,fit:crop/${Record.cover.handle}` : null
+const Record = ({ url: { pathname }, data: { loading, Record } }) => {
+  const pageImage = !loading && Record.cover ? `https://media.graphcms.com/resize=w:80,h:80,fit:crop/${Record.cover.handle}` : null
 
   return (
     <App>

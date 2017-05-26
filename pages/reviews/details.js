@@ -8,7 +8,7 @@ import ReviewDetails from '../../components/ReviewDetails'
 import withData from '../../lib/withData'
 
 function Review ({ url: { pathname }, data: { loading, Review } }) {
-  const pageImage = Review.record.image ? `https://media.graphcms.com/resize=w:80,h:80,fit:crop/${Review.record.image.handle}` : null
+  const pageImage = Review && Review.record.image ? `https://media.graphcms.com/resize=w:80,h:80,fit:crop/${Review.record.image.handle}` : null
 
   return (
     <App>

@@ -24,7 +24,11 @@ app.prepare()
   })
 
   server.get('/reviews/:slug', (req, res) => {
-    return app.render(req, res, '/reviews/details', { slug: req.params.slug })
+    const queryParams = {
+      slug: req.params.slug,
+      type: req.params.type
+    }
+    return app.render(req, res, '/reviews/details', queryParams)
   })
 
   server.get('/records', (req, res) => {
@@ -32,7 +36,11 @@ app.prepare()
   })
 
   server.get('/records/:slug', (req, res) => {
-    return app.render(req, res, '/records/details', { slug: req.params.slug })
+    const queryParams = {
+      slug: req.params.slug,
+      type: req.params.type
+    }
+    return app.render(req, res, '/records/details', queryParams)
   })
 
   server.get('*', (req, res) => {
