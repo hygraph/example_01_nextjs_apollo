@@ -1,1 +1,3 @@
-export default () => <div className='loading'>Loading...</div>
+const Loading = () => <div className='loading'>Loading...</div>
+
+export default Loading

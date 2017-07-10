@@ -1,5 +1,4 @@
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import { gql, graphql } from 'react-apollo'
 import App from '../components/App'
 import Grid from '../components/Grid'
 import Header from '../components/Header'
@@ -7,7 +6,7 @@ import Loading from '../components/Loading'
 import Nav from '../components/Nav'
 import withData from '../lib/withData'
 
-function AllArtists ({ url: { pathname }, loading, data: { allArtists } }) {
+const AllArtists = ({ url: { pathname }, data: { loading, allArtists } }) => {
   return (
     <App>
       <Nav pathname={pathname} />

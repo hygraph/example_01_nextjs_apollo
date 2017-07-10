@@ -1,5 +1,4 @@
-import gql from 'graphql-tag'
-import { graphql } from 'react-apollo'
+import { gql, graphql } from 'react-apollo'
 import App from '../../components/App'
 import Nav from '../../components/Nav'
 import Loading from '../../components/Loading'
@@ -8,8 +7,8 @@ import Header from '../../components/Header'
 import ArtistDetails from '../../components/ArtistDetails'
 import withData from '../../lib/withData'
 
-function Artist ({ url: { pathname }, data: { loading, Artist } }) {
-  const pageImage = Artist.picture ? `https://media.graphcms.com/resize=w:80,h:80,fit:crop/${Artist.picture.handle}` : null
+const Artist = ({ url: { pathname }, data: { loading, artist } }) => {
+  const pageImage = !loading && artist.picture ? `https://media.graphcms.com/resize=w:80,h:80,fit:crop/${artist.picture.handle}` : null
 
   return (
     <App>
@@ -17,20 +16,20 @@ function Artist ({ url: { pathname }, data: { loading, Artist } }) {
       {
         loading ? <Loading /> : (
           <div>
-            <Header title={Artist.name} pageImage={pageImage} isIcon={false} />
+            <Header title={artist.name} pageImage={pageImage} isIcon={false} />
             <section>
-              <ArtistDetails artist={Artist} />
+              <ArtistDetails artist={artist} />
             </section>
           </div>
         )
-       }
+      }
     </App>
   )
 }
 
 const artistDetails = gql`
   query artistDetails($slug: String! ) {
-    Artist(slug: $slug) {
+    artist: Artist(slug: $slug) {
       id
       name
       slug

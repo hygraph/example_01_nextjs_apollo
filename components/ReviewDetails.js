@@ -2,7 +2,7 @@ import StarRatingComponent from 'react-star-rating-component'
 import ReactMarkdown from 'react-markdown'
 import Grid from './Grid'
 
-export default ({ review: { title, review, rating, record: { artist } } }) => (
+const ReviewDetails = ({ review: { title, review, rating, record: { artist } } }) => (
   <article>
     <div className='star-wrapper'>
       <StarRatingComponent
@@ -26,3 +26,5 @@ export default ({ review: { title, review, rating, record: { artist } } }) => (
     `}</style>
   </article>
 )
+
+export default ReviewDetails

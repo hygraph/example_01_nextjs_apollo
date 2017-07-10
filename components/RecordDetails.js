@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default ({ record }) => (
+const RecordDetails = ({ record }) => (
   <div>
     <ul>
       {record.tracks.map(({ id: trackId, title, length }) => (
@@ -32,3 +32,5 @@ export default ({ record }) => (
     `}</style>
   </div>
 )
+
+export default RecordDetails
