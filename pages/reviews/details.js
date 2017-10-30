@@ -1,5 +1,6 @@
 import React from 'react'
-import { gql, graphql } from 'react-apollo'
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
 import App from '../../components/App'
 import Nav from '../../components/Nav'
 import Loading from '../../components/Loading'
@@ -7,7 +8,9 @@ import Header from '../../components/Header'
 import ReviewDetails from '../../components/ReviewDetails'
 import withData from '../../lib/withData'
 
-function Review ({ url: { pathname }, data: { loading, Review } }) {
+function Review ({ url: { pathname }, data: { loading, error, Review } }) {
+  if (error) return <h1>Error loading the review.</h1>
+
   const pageImage = Review && Review.record.image ? `https://media.graphcms.com/resize=w:80,h:80,fit:crop/${Review.record.image.handle}` : null
 
   return (
