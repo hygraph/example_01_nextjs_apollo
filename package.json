@@ -23,13 +23,16 @@
     "standard": "^10.0.2"
   },
   "dependencies": {
-    "classnames": "2.2.5",
+    "apollo-client-preset": "^1.0.1",
     "express": "^4.15.3",
+    "graphql": "^0.11.7",
+    "graphql-anywhere": "^4.0.0",
+    "graphql-tag": "^2.5.0",
     "isomorphic-fetch": "^2.2.1",
-    "next": "^2.4.0",
-    "react": "^15.5.4",
-    "react-apollo": "^1.2.0",
-    "react-dom": "^15.5.4",
+    "next": "^4.1.4",
+    "react": "^16.0.0",
+    "react-apollo": "^2.0.0",
+    "react-dom": "^16.0.0",
     "react-markdown": "^2.5.0",
     "react-star-rating-component": "1.2.4"
   }

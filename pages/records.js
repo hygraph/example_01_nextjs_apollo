@@ -1,4 +1,5 @@
-import { gql, graphql } from 'react-apollo'
+import { graphql } from 'react-apollo'
+import gql from 'graphql-tag'
 import App from '../components/App'
 import Grid from '../components/Grid'
 import Header from '../components/Header'
@@ -6,7 +7,8 @@ import Loading from '../components/Loading'
 import Nav from '../components/Nav'
 import withData from '../lib/withData'
 
-const AllRecords = ({ url: { pathname }, data: { loading, allRecords } }) => {
+const AllRecords = ({ url: { pathname }, data: { loading, error, allRecords } }) => {
+  if (error) return <h1>Error loading records.</h1>
   return (
     <App>
       <Nav pathname={pathname} />
